@@ -1,0 +1,22 @@
+{
+  "name": "web3-introduction",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.25.0",
+  "scripts": {
+    "build": "pnpm -r --if-present run build",
+    "test": "pnpm -r --if-present run test",
+    "lint": "pnpm -r --if-present run lint",
+    "typecheck": "pnpm -r --if-present run typecheck",
+    "api:start": "pnpm --filter @web3-introduction/api run start",
+    "api:start:dev": "pnpm --filter @web3-introduction/api run start:dev",
+    "contracts:compile": "pnpm --filter @web3-introduction/contracts run compile",
+    "contracts:test": "pnpm --filter @web3-introduction/contracts run test",
+    "contracts:node": "pnpm --filter @web3-introduction/contracts run node",
+    "contracts:deploy:local": "pnpm --filter @web3-introduction/contracts run deploy:localhost",
+    "contracts:deploy:sepolia": "pnpm --filter @web3-introduction/contracts run deploy:sepolia"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

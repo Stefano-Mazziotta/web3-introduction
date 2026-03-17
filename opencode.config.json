@@ -1,0 +1,115 @@
+{
+  "version": "1.0",
+  "project": {
+    "name": "web3-introduction",
+    "type": "web3-learning",
+    "language": ["typescript", "solidity"],
+    "packageManager": "pnpm"
+  },
+  "contextFiles": [
+    "README.md",
+    "AGENTS.md",
+    "docs/ARCHITECTURE.md",
+    "docs/CONVENTIONS.md",
+    ".env.example"
+  ],
+  "roadmap": [
+    {
+      "id": "foundation",
+      "title": "Project Foundation",
+      "outcomes": [
+        "Initialize repository structure",
+        "Set up linting, formatting, and testing",
+        "Document setup and run commands"
+      ]
+    },
+    {
+      "id": "contracts",
+      "title": "Smart Contracts",
+      "outcomes": [
+        "Implement core Solidity contracts",
+        "Add deployment scripts",
+        "Create unit tests for contract behavior"
+      ]
+    },
+    {
+      "id": "integration",
+      "title": "Web3 Integration",
+      "outcomes": [
+        "Connect frontend to wallet",
+        "Integrate contract read/write flows",
+        "Handle transaction states and errors"
+      ]
+    },
+    {
+      "id": "quality",
+      "title": "Quality and Delivery",
+      "outcomes": [
+        "Add CI checks for lint/test/build",
+        "Improve documentation and examples",
+        "Prepare release checklist"
+      ]
+    }
+  ],
+  "agents": {
+    "planner": {
+      "role": "Break work into milestones and tasks",
+      "rules": [
+        "Always provide a 3-7 step plan for non-trivial tasks",
+        "Use existing repository conventions",
+        "Prefer minimal, reversible changes"
+      ]
+    },
+    "implementer": {
+      "role": "Make code changes",
+      "rules": [
+        "Modify only files required for the task",
+        "Do not introduce breaking changes without explicit note",
+        "Keep code style and naming consistent with existing files"
+      ]
+    },
+    "reviewer": {
+      "role": "Validate correctness and risks",
+      "rules": [
+        "Check logic, edge cases, and security impact",
+        "Flag any missing tests",
+        "Prefer concrete, actionable feedback"
+      ]
+    },
+    "qa": {
+      "role": "Run checks and report results",
+      "rules": [
+        "Run lint, test, and build when available",
+        "Report failures with file-level pointers",
+        "Do not claim success without command output"
+      ]
+    }
+  },
+  "skillsRules": {
+    "prompting": [
+      "Be explicit about task goal, constraints, and acceptance criteria",
+      "Reference concrete files and functions whenever possible",
+      "Prefer short, deterministic prompts over broad requests"
+    ],
+    "coding": [
+      "Follow project lint and formatter rules",
+      "Add comments only for non-obvious logic",
+      "Avoid adding dependencies unless needed"
+    ],
+    "security": [
+      "Never commit secrets or private keys",
+      "Treat wallet signing and tx submission as sensitive flows",
+      "Validate external input and chain/network assumptions"
+    ],
+    "git": [
+      "Never rewrite history unless explicitly requested",
+      "Do not include unrelated file changes in commits",
+      "Use clear, intent-focused commit messages"
+    ]
+  },
+  "definitionOfDone": [
+    "Feature behavior matches requested acceptance criteria",
+    "Tests and lint checks pass",
+    "Documentation updated when behavior changes"
+  ]
+}
