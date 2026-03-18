@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "solidity-development": {
+      "source": "pluginagentmarketplace/custom-plugin-blockchain",
+      "sourceType": "github",
+      "computedHash": "1d54e36d9279d50a291c61e08b16f524c6729582c68e484a949fea08e36db767"
+    }
+  }
+}
