@@ -14,7 +14,11 @@
     "contracts:test": "pnpm --filter @web3-introduction/contracts run test",
     "contracts:node": "pnpm --filter @web3-introduction/contracts run node",
     "contracts:deploy:local": "pnpm --filter @web3-introduction/contracts run deploy:localhost",
-    "contracts:deploy:sepolia": "pnpm --filter @web3-introduction/contracts run deploy:sepolia"
+    "contracts:deploy:local:hello": "pnpm --filter @web3-introduction/contracts run deploy:localhost:hello",
+    "contracts:deploy:local:nft": "pnpm --filter @web3-introduction/contracts run deploy:localhost:nft",
+    "contracts:deploy:sepolia": "pnpm --filter @web3-introduction/contracts run deploy:sepolia",
+    "contracts:deploy:sepolia:hello": "pnpm --filter @web3-introduction/contracts run deploy:sepolia:hello",
+    "contracts:deploy:sepolia:nft": "pnpm --filter @web3-introduction/contracts run deploy:sepolia:nft"
   },
   "engines": {
     "node": ">=20.0.0"

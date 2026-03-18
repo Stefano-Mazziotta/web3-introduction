@@ -16,6 +16,12 @@ Learning-oriented Proof of Concept for a Web3 backend using NestJS + ethers.js +
 - Hardhat contracts package with starter contract, deployment script, and tests.
 - Local-node-first workflow.
 
+## Stage 2 Scope
+
+- Add a minimal ERC721 implementation while keeping Step 1 starter contract.
+- Add owner-only minting and per-token metadata URI storage.
+- Add ERC721-focused tests for access control and token behavior.
+
 ## Quick Start
 
 ```bash
@@ -30,6 +36,16 @@ Run local chain and deploy:
 pnpm run contracts:node
 # in another terminal
 pnpm run contracts:deploy:local
+```
+
+Deploy a specific learning contract:
+
+```bash
+# Step 1 contract
+pnpm run contracts:deploy:local:hello
+
+# Step 2 contract
+pnpm run contracts:deploy:local:nft
 ```
 
 Run API:

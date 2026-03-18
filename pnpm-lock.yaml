@@ -70,6 +70,10 @@ importers:
         version: 5.9.3
 
   packages/contracts:
+    dependencies:
+      '@openzeppelin/contracts':
+        specifier: ^4.9.6
+        version: 4.9.6
     devDependencies:
       '@nomicfoundation/hardhat-ethers':
         specifier: ^3.0.8
@@ -764,6 +768,9 @@ packages:
     resolution: {integrity: sha512-um0xL3fO7Mf4fDxcqx9KryrB7zgRM5JSlvGN5AGkP6JLM5XEKyjeAiPbNxdXVXQ16isuAhYpvP88NgL2BGd6aA==}
     engines: {node: '>=8.0.0', npm: '>=5.0.0'}
     hasBin: true
+
+  '@openzeppelin/contracts@4.9.6':
+    resolution: {integrity: sha512-xSmezSupL+y9VkHZJGDoCBpmnB2ogM13ccaYDWqJTfS3dbuHkgjuwDFUmaFauBCboQMGB/S5UqUl2y54X99BmA==}
 
   '@paralleldrive/cuid2@2.3.1':
     resolution: {integrity: sha512-XO7cAxhnTZl0Yggq6jOgjiOHhbgcO4NqFqwSmQpjK3b6TEE6Uj/jfSk6wzYyemh3+I0sHirKSetjQwn5cZktFw==}
@@ -4654,6 +4661,8 @@ snapshots:
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
+
+  '@openzeppelin/contracts@4.9.6': {}
 
   '@paralleldrive/cuid2@2.3.1':
     dependencies:

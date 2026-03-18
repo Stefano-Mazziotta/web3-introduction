@@ -51,6 +51,12 @@ Deploy in terminal B:
 pnpm run contracts:deploy:local
 ```
 
+Force deploy Step 1 contract explicitly:
+
+```bash
+pnpm run contracts:deploy:local:hello
+```
+
 API:
 
 ```bash
